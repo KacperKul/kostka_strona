@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" role="img" aria-label="Przed i po myciu kostki brukowej">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf2f3"/>
+      <stop offset="100%" stop-color="#d8ece9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="780" fill="url(#bg)"/>
+  <rect x="60" y="90" width="500" height="600" rx="24" fill="#b7c3c7"/>
+  <rect x="640" y="90" width="500" height="600" rx="24" fill="#0f766e" opacity="0.88"/>
+  <text x="310" y="420" font-size="72" text-anchor="middle" fill="#1f2a37" font-family="Arial">PRZED</text>
+  <text x="890" y="420" font-size="72" text-anchor="middle" fill="#ffffff" font-family="Arial">PO</text>
+</svg>
