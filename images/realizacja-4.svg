@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-label="Zdjęcie realizacji przed i po">
+  <rect width="900" height="650" fill="#eef4f5"/>
+  <rect x="40" y="60" width="380" height="530" rx="18" fill="#b8c4c8"/>
+  <rect x="480" y="60" width="380" height="530" rx="18" fill="#0f766e"/>
+  <text x="230" y="340" font-size="58" text-anchor="middle" fill="#1f2a37" font-family="Arial">PRZED</text>
+  <text x="670" y="340" font-size="58" text-anchor="middle" fill="#ffffff" font-family="Arial">PO</text>
+</svg>
