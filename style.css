@@ -1,0 +1,380 @@
+/*
+  =========================
+  USTAWIENIA GŁÓWNE / KOLORY
+  Zmień poniższe wartości, aby szybko zmodyfikować motyw
+  =========================
+*/
+:root {
+  --color-bg: #ffffff;
+  --color-primary: #0f766e;
+  --color-dark: #13161e;
+  --color-muted: #f4f7f8;
+  --color-text: #1f2a37;
+  --color-shadow: 0 12px 30px rgba(19, 22, 30, 0.08);
+  --radius: 14px;
+  --container: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(var(--container), 92vw);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-muted {
+  background: var(--color-muted);
+}
+
+.section-head {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.section-head h2 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  color: var(--color-dark);
+}
+
+/* NAVBAR */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e8edef;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 72px;
+  gap: 1rem;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--color-dark);
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dce4e6;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  padding: 9px 8px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--color-dark);
+  margin: 6px 0;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--color-shadow);
+}
+
+.btn-outline {
+  border: 1px solid #d4dddf;
+  color: var(--color-dark);
+  background: #fff;
+}
+
+.btn-small {
+  padding: 0.56rem 0.95rem;
+}
+
+/* HERO */
+.hero {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero .eyebrow {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero h1 {
+  margin: 0.5rem 0 0.9rem;
+  font-size: clamp(2rem, 4.2vw, 3.4rem);
+  line-height: 1.12;
+  color: var(--color-dark);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.05rem;
+  max-width: 56ch;
+}
+
+.hero-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.hero-image img {
+  border-radius: 16px;
+  box-shadow: var(--color-shadow);
+}
+
+/* KARTY */
+.features-grid,
+.pricing-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card,
+.price-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1.3rem;
+  border: 1px solid #e8edef;
+  box-shadow: var(--color-shadow);
+}
+
+.card h3,
+.price-card h3 {
+  margin-top: 0;
+  color: var(--color-dark);
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--color-primary);
+}
+
+.pricing-note {
+  margin: 1.2rem 0 1.2rem;
+}
+
+/* REALIZACJE */
+.portfolio-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.portfolio-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--color-shadow);
+  border: 1px solid #e3eaec;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.04);
+}
+
+/* KONTAKT */
+.contact-wrap {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-form {
+  background: #fff;
+  border: 1px solid #e6edef;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: var(--color-shadow);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #ccd7da;
+  border-radius: 12px;
+  padding: 0.78rem;
+  margin-bottom: 0.9rem;
+  font: inherit;
+}
+
+.form-note {
+  margin: 0.5rem 0 0;
+  color: var(--color-primary);
+  font-weight: 500;
+  min-height: 1.2em;
+}
+
+/* STOPKA */
+.site-footer {
+  background: var(--color-dark);
+  color: #e8eef0;
+  padding-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-brand {
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1rem 0;
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+}
+
+/* ANIMACJE */
+.fade-in {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSYWNOŚĆ */
+@media (min-width: 720px) {
+  .hero {
+    grid-template-columns: 1.05fr 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-wrap,
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 980px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #e4edef;
+    padding: 1rem 4vw 1.2rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
