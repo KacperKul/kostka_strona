@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'>
+<defs><linearGradient id='g2' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#d8dde3'/><stop offset='100%' stop-color='#95a6ba'/></linearGradient></defs>
+<rect width='1200' height='800' fill='url(#g2)'/>
+<rect x='80' y='100' width='490' height='600' rx='20' fill='#9ca8b0'/>
+<rect x='630' y='100' width='490' height='600' rx='20' fill='#1e88ff'/>
+<text x='325' y='420' text-anchor='middle' font-size='74' fill='#1a2631' font-family='Arial'>PRZED</text>
+<text x='875' y='420' text-anchor='middle' font-size='74' fill='white' font-family='Arial'>PO</text>
+</svg>
